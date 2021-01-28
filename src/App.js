@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Challenge from './components/challenges/day01/Challenge';
+import Footer from './components/challenges/day01/Footer';
+import Home from './components/challenges/day01/Home';
 
 function App() {
+const name = "Joshua"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to React, {name}</h1>
+      <h2>We just modified our root App component</h2>
+      <Header />
+      <Challenge />
+      <Home />
+      <Footer />
     </div>
   );
 }
+
+
 
 export default App;
